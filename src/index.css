@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans antialiased text-slate-800 dark:text-slate-200;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-1.5;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-slate-300 dark:bg-slate-600;
+  }
+}
+
+@layer components {
+  /* pt-12 + the fixed-nav pt-16 on <main> = ~112px total top offset (48px below navbar) */
+  .section-wrapper {
+    @apply pt-12 pb-20 sm:pt-14 sm:pb-24;
+  }
+
+  .container-xl {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-label {
+    @apply inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase
+           text-indigo-600 dark:text-indigo-400 mb-3;
+  }
+
+  .section-heading {
+    @apply text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 dark:text-white mb-4;
+  }
+
+  .section-sub {
+    @apply text-slate-500 dark:text-slate-400 text-lg max-w-2xl;
+  }
+
+  .card {
+    @apply bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700
+           shadow-sm transition-all duration-200;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 rounded-xl bg-indigo-600 px-6 py-3 text-sm font-semibold
+           text-white shadow-lg shadow-indigo-500/20 transition-all duration-200
+           hover:bg-indigo-700 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-indigo-500/30
+           focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2
+           focus-visible:outline-indigo-600 active:translate-y-0;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 rounded-xl border-2 border-indigo-600 px-6 py-3
+           text-sm font-semibold text-indigo-600 transition-all duration-200
+           hover:bg-indigo-600 hover:text-white hover:-translate-y-0.5
+           dark:border-indigo-400 dark:text-indigo-400 dark:hover:bg-indigo-500 dark:hover:text-white
+           focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2
+           focus-visible:outline-indigo-600 active:translate-y-0;
+  }
+
+  .tag {
+    @apply inline-flex items-center rounded-md px-2.5 py-0.5 text-xs font-medium;
+  }
+}
+
+/* Hero dot-grid background pattern */
+.hero-pattern {
+  background-image: radial-gradient(circle, rgba(99, 102, 241, 0.15) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Gradient border trick for profile image placeholder */
+.gradient-ring {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6, #06b6d4);
+  padding: 3px;
+  border-radius: 50%;
+}
+
+/* Timeline vertical line gradient */
+.timeline-line {
+  background: linear-gradient(to bottom, #6366f1, #8b5cf6 50%, #e2e8f0);
+}
+.dark .timeline-line {
+  background: linear-gradient(to bottom, #6366f1, #8b5cf6 50%, #1e293b);
+}
