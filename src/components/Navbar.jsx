@@ -106,7 +106,7 @@ export default function Navbar() {
 
           {/* Resume CTA */}
           <a
-            href="/assets/resume.pdf"
+            href="/resume.pdf"
             download
             className="hidden sm:inline-flex btn-primary text-sm py-2 px-4"
             aria-label="Download resume PDF"
@@ -155,7 +155,7 @@ export default function Navbar() {
           ))}
           <li>
             <a
-              href="/assets/resume.pdf"
+              href="/resume.pdf"
               download
               className="block mt-1 btn-primary text-center"
             >

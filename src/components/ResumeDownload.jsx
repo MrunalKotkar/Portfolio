@@ -33,7 +33,7 @@ export default function ResumeDownload() {
           </div>
 
           <a
-            href="/assets/resume.pdf"
+            href="/resume.pdf"
             download
             className="inline-flex items-center gap-3 rounded-2xl bg-white px-10 py-4 text-base font-bold text-indigo-700 shadow-xl shadow-indigo-900/30 transition-all duration-200 hover:-translate-y-1 hover:shadow-2xl hover:shadow-indigo-900/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white active:translate-y-0"
             aria-label="Download resume as PDF"
