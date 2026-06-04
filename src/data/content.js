@@ -257,7 +257,7 @@ export const education = [
     startDate: 'Aug 2018',   // TODO e.g. 'Aug 2018'
     endDate: 'May 2022',     // TODO e.g. 'May 2022'
     location: 'Pune, Maharashtra, India',                // TODO
-    gpa: '3.73 / 4.0',                                       // TODO: add GPA string or keep null
+    gpa: '3.93 / 4.0',                                       // TODO: add GPA string or keep null
     highlights: [
       // TODO: Replace with your actual thesis, coursework, achievements, GPA, awards
       'Relevant coursework: Data Structures and Algorithms, Operating Systems, Computer Networks, Database Management Systems, Software Engineering',
