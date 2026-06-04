@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
+import { HashRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import { ThemeProvider } from './context/ThemeContext'
 import Navbar from './components/Navbar'
 import Landing from './components/Landing'
@@ -38,7 +38,7 @@ function PageShell({ children }) {
 export default function App() {
   return (
     <ThemeProvider>
-      <BrowserRouter>
+      <HashRouter>
         <ScrollReset />
         <Routes>
           <Route path="/" element={
@@ -94,7 +94,7 @@ export default function App() {
             <PageShell><Landing /></PageShell>
           } />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
   )
 }
