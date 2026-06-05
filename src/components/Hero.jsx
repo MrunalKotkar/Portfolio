@@ -101,13 +101,14 @@ export default function Hero() {
             <ArrowRight size={18} />
           </a>
           <a
-            href="/assets/resume.pdf"
-            download
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-xl border-2 border-slate-600 px-8 py-3.5 text-base font-semibold text-slate-200 transition-all duration-200 hover:border-indigo-400 hover:text-white hover:-translate-y-0.5 hover:shadow-lg hover:shadow-indigo-500/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-indigo-500"
-            aria-label="Download resume PDF"
+            aria-label="View resume PDF"
           >
             <Download size={18} />
-            Download Resume
+            View Resume
           </a>
         </div>
       </div>

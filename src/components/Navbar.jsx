@@ -107,9 +107,10 @@ export default function Navbar() {
           {/* Resume CTA */}
           <a
             href="/resume.pdf"
-            download
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden sm:inline-flex btn-primary text-sm py-2 px-4"
-            aria-label="Download resume PDF"
+            aria-label="View resume PDF"
           >
             Resume
           </a>
@@ -156,10 +157,11 @@ export default function Navbar() {
           <li>
             <a
               href="/resume.pdf"
-              download
+              target="_blank"
+              rel="noopener noreferrer"
               className="block mt-1 btn-primary text-center"
             >
-              Download Resume
+              View Resume
             </a>
           </li>
         </ul>
